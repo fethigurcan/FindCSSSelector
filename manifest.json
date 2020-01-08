@@ -1,0 +1,48 @@
+{
+    "name": "Find CSS Selector",
+    "version": "1.0",
+    "author": "Fethi Gürcan",    
+    "description": "FindCSSSelector is a Chrome Plugin that helps to find and analyze unique CSS Selectors on web pages for test professionals",
+    "permissions": ["activeTab","clipboardWrite"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      //"default_popup": "popup.html",
+      "default_title": "Find CSS Selector",
+      "default_icon": {
+        "16": "disabled16.png",
+        "32": "disabled32.png",
+        "48": "disabled48.png",
+        "128": "disabled128.png"
+      }      
+    },
+    "content_scripts": [
+       {
+         "matches": ["*://*/*"],
+         "css": ["content.css"],
+         "js": ["helper.js","content.js"],
+         "match_about_blank":true,
+         "all_frames":true
+       }
+    ],
+    "web_accessible_resources": ["helper.js","site.js"],
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "windows": "Ctrl+Shift+S",
+          "mac": "Command+Shift+S",
+          "chromeos": "Ctrl+Shift+S",
+          "linux": "Ctrl+Shift+S"
+        }
+      }
+    },
+    "icons": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },    
+    "manifest_version": 2
+}
