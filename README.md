@@ -1,5 +1,5 @@
 # FindCSSSelector
-FindCSSSelector is a Chrome Plugin that helps to find and analyze unique CSS Selectors on web pages for test professionals
+FindCSSSelector is a Chrome Plugin that helps you to find and analyze unique CSS Selectors on web pages for test professionals
 
 Notes: Tested on Linux, MacOS and also Windows
 
