@@ -5,7 +5,7 @@ Notes: Tested on Linux, MacOS and also Windows
 
 ## Usage
   - Clone the repository on a local folder
-  - open chrome://extensions on Chrome browser
+  - Open chrome://extensions on Chrome browser
   - Set Developer Mode enable
   - Load folder with Load Unpacked Item
   - Refresh your preffered tab or open a new page for first installation only
