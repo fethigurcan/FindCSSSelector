@@ -2,7 +2,7 @@
     "name": "Find CSS Selector",
     "version": "1.0",
     "author": "Fethi Gürcan",    
-    "description": "FindCSSSelector is a Chrome Plugin that helps to find and analyze unique CSS Selectors on web pages for test professionals",
+    "description": "FindCSSSelector is a Chrome Plugin that helps you to find and analyze unique CSS Selectors on web pages for test professionals",
     "permissions": ["activeTab","clipboardWrite"],
     "background": {
       "scripts": ["background.js"],
